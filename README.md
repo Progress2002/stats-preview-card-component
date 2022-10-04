@@ -26,12 +26,13 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
+![Screenshot (60)](https://user-images.githubusercontent.com/100991162/193950409-f6d9a0e8-8c6f-4d47-83e4-b459f066c865.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here]
-- Live Site URL: [Add live site URL here]
+- Solution URL: [https://github.com/Progress2002/stats-preview-card-component.git]
+- Live Site URL: [https://progress2002.github.io/stats-preview-card-component/]
 
 ## My process
 
@@ -39,18 +40,13 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
+- SASS
 - Flexbox
 - Mobile-first workflow
 
 ### What I learned
 
 I learned how to use flex property aswell as how to set opacity for a color property.
-
-
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
 
 
