@@ -1,0 +1,181 @@
+$bgColor: hsl(233, 47%, 7%);
+$primaryColor : hsl(277, 64%, 61%);
+$secColor: hsl(0, 0%, 100%);
+$basic: hsl(244, 38%, 16%);
+$basic-1: hsla(0, 0%, 100%, 0.75);
+$basic-2: hsla(0, 0%, 100%, 0.6);
+$font-family: sans-serif;
+$mainFont: 'Inter', $font-family;
+$basicFont: 'Lexend Deca', $font-family;
+$imgBorder: 10px 10px 0 0;
+$imgBorderDesk:  0 10px 10px 0;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background-color: $bgColor;
+  color: $secColor;
+}
+
+#main {
+  width: 90%;
+  margin: 90px auto;
+}
+
+.container {
+  background-color: $basic;
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 10px;
+}
+
+.content {
+  padding: 30px 0;
+
+  ul {
+    list-style-type: none;
+  }
+
+  h1 {
+    padding: 35px 30px 20px;
+    font-size: 30px;
+
+    span {
+      color: $primaryColor;
+    }
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h1,
+  h2 {
+    font-family: $mainFont;
+    font-weight: 700;
+    color: $secColor;
+    line-height: 1.3;
+  }
+
+  h1,
+  h2,
+  p {
+    text-align: center;
+  }
+
+  p {
+    color: $basic-1;
+    font-size: 15px;
+    font-family: $mainFont;
+    font-weight: 400;
+    padding: 0 35px 10px;
+    line-height: 1.7;
+  }
+
+  .status {
+    li {
+      margin-top: 10px;
+    }
+
+    p {
+      color: $basic-2;
+      font-family: $basicFont;
+      text-transform: uppercase;
+      font-size: 13px;
+      margin-top: 3px;
+    }
+  }
+}
+
+.image {
+  width: 100%;
+  height: 250px;
+  background-image: url("images/image-header-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: $imgBorder;
+
+  .layer {
+    background-color: hsl(277, 99%, 28%);
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    border-radius: $imgBorder;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 15px;
+
+  a { color: hsl(228, 45%, 44%); }
+}
+
+@media (min-width: 51.2em) {
+  body {
+    min-height: 100vh;
+  }
+
+  #main {
+    width: 1200px;
+    margin: auto;
+  }
+
+  .container {
+    flex-direction: row;
+    // position: relative;
+  }
+
+  .content {
+    padding: 50px;
+
+    h1 {
+      padding: 35px 30px 20px;
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 23px;
+    }
+
+    h1,
+    p {
+      text-align: left;
+    }
+
+    p {
+      color: $basic-2;
+    }
+
+    .status {
+      display: flex;
+
+      li {
+        margin-top: 60px;
+      }
+    }
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    background-image: url("images/image-header-desktop.jpg");
+    background-repeat: no-repeat;
+    border-radius: $imgBorderDesk;
+
+    .layer {
+      border-radius: $imgBorderDesk;
+    }
+  }
+
+  .attribution {
+    font-size: 1em;
+  }
+}
